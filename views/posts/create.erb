@@ -1,0 +1,15 @@
+<h2>Create Post</h2>
+<br/>
+<form action="/posts" method="post"role="form">
+ <div class="form-group">
+   <label for="post_title">Title:</label>
+   <br>
+   <input id="post_title" class="form-control" name="post[title]" type="text" value="<%= @post.title %>" style="width=90%"/>
+ </div>
+ <div class="form-group">
+   <label for="post_body">Body:</label>
+   <br>
+   <textarea id="post_body" name="post[body]" class="form-control" rows="10"><%= @post.body %></textarea>
+ </div>
+ <button type="submit" class="btn btn-success">Submit</button>
+</form>

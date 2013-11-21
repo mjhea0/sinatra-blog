@@ -1,0 +1,8 @@
+<ul>
+<% @posts.each do |post| %>
+ <li>
+   <h4><a href="/posts/<%= post.id %>"><%= post.title %></a></h4>
+   <p>Created: <%= post.created_at %></p>
+ </li>
+<% end %>
+</ul>
