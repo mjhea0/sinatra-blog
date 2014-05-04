@@ -17,3 +17,4 @@ This is just a simple blog, which uses Sinatra + PostgreSQL + Heroku + ActiveRec
 Then open [http://localhost:4567/](http://localhost:4567/)
 
 Fork. Star. Applaud. Build.
+

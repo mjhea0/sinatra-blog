@@ -44,6 +44,7 @@ GEM
     sinatra-activerecord (1.2.3)
       activerecord (>= 3.0)
       sinatra (~> 1.0)
+    sinatra-captcha (0.1.0.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
     sinatra-redirect-with-flash (0.2.0)
@@ -67,6 +68,7 @@ DEPENDENCIES
   pg
   sinatra
   sinatra-activerecord
+  sinatra-captcha
   sinatra-flash
   sinatra-redirect-with-flash
   sqlite3

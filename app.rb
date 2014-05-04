@@ -5,6 +5,7 @@ require 'sinatra/activerecord'
 require './environments'
 require 'sinatra/flash'
 require 'sinatra/redirect_with_flash'
+require 'sinatra/captcha'
 
 enable :sessions
 
@@ -43,6 +44,7 @@ get "/posts/create" do
   erb :"posts/create"
 end
 post "/posts" do
+  halt(401, "invalid captcha") unless captcha_pass?
   @post = Post.new(params[:post])
   if @post.save
     redirect "posts/#{@post.id}", :notice => 'Congrats! Love the new post. (This message will disapear in 4 seconds.)'

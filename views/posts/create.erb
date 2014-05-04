@@ -10,6 +10,12 @@
    <label for="post_body">Body:</label>
    <br>
    <textarea id="post_body" name="post[body]" class="form-control" rows="10"><%= @post.body %></textarea>
+   <br>
+   <div><%= captcha_image_tag %></div>
+   <br>
+   <label>Captcha:</label>
+   <%= captcha_answer_tag %>
  </div>
  <button type="submit" class="btn btn-success">Submit</button>
+ <br>
 </form>
