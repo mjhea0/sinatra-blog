@@ -4,7 +4,7 @@ This is just a simple blog, which uses Sinatra + PostgreSQL + Heroku + ActiveRec
 
 ##### Want to view the tutorial on how I built it? 
 
-- Yes? View the [tutorial](http://mherman.org/blog/2013/06/08/designing-with-class-sinatra-plus-postgresql-plus-heroku/) on my blog (upated nov. 20, 2013)
+- Yes? View the [tutorial](http://mherman.org/blog/2013/06/08/designing-with-class-sinatra-plus-postgresql-plus-heroku/) on my blog (upated may 4, 2013); check out how to add a [captcha](http://mherman.org/blog/2014/05/04/adding-a-captcha-to-sinatra-to-minimize-spam)
 - No ...
 
 ##### Well, at the very least, download the app and add some features (editing/deleting posts, user login/logout/authentication)
