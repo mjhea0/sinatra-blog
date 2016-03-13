@@ -44,7 +44,7 @@ get "/posts/create" do
   erb :"posts/create"
 end
 post "/posts" do
-  halt(401, "invalid captcha") unless captcha_pass?
+  redirect "posts/create", :error => 'Invalid captcha' unless captcha_pass?
   @post = Post.new(params[:post])
   if @post.save
     redirect "posts/#{@post.id}", :notice => 'Congrats! Love the new post. (This message will disappear in 4 seconds.)'
